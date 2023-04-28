@@ -1,12 +1,15 @@
+/*sets background color to gray*/
 body {
   background-color: gray;
 }
 
+/* resizing the images*/
 img {
   width: 100%;
   height: 150px;
 }
 
+/*creating a margin to make space*/
 p {
   margin: 25px;
   width: 100%;
@@ -17,6 +20,7 @@ header {
   width: 100%;
 }
 
+/* changed the font size and removd margin up top to fit name in corner*/
 h1#Bridger {
   width: 100%;
   background-color: transparent;
@@ -25,6 +29,7 @@ h1#Bridger {
   margin-top: 0px;
 }
 
+/* used display flex to have them links in one line*/
 nav ul {
   display: flex;
   justify-content: flex-end;
@@ -35,9 +40,7 @@ li {
   list-style-type: none;
 }
 
-a {
-}
-
+/*underlined the links*/
 nav a {
   color: black;
   font-weight: bold;
@@ -48,6 +51,7 @@ a.nav-link {
   font-size: 30px;
 }
 
+/*holds the blue background*/
 .header-container {
   width: 100%;
   position: relative;
@@ -55,6 +59,7 @@ a.nav-link {
   color: black;
 }
 
+/*used flex on all sections to keep on page*/
 .section {
   max-height: fit-content;
   display: flex;
@@ -65,26 +70,31 @@ a.nav-link {
   width: fit-content;
 }
 
+/*holds all images in one section so i can apply what i need*/
 #portfolio {
   margin: 25px;
   margin-left: 10%;
 }
 
+/*holds the bottom images so i can use flex wrap*/
 .projects-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
+/*targets the first section after parent has been declared*/
 .projects-container:first-child {
   flex-basis: 100%;
   height: 400px;
 }
 
+/*used to fit images*/
 .project-items {
   width: 50%;
 }
 
+/*targets the left side where i added a border*/
 h3,
 #About,
 #middle,
@@ -96,12 +106,14 @@ h3,
   text-align: right;
 }
 
+/*changed top image to make it bigger than those below it*/
 #topimage {
   height: 350px;
   width: 100%;
   border: solid black 5px;
 }
 
+/*used to put "bridgers page" in the bottom right*/
 div.bottom-right {
   font-size: 45px;
   color: white;
@@ -114,6 +126,7 @@ div.bottom-right {
   margin: 25px;
 }
 
+/*creates a border around the bottom images*/
 .underimages {
   border: solid black 5px;
 }
