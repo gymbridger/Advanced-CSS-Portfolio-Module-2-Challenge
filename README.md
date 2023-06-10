@@ -4,5 +4,7 @@ This is a repository for the University of Utah coding bootcamp that contains mo
 
 Here is a link to the website: https://gymbridger.github.io/Advanced-CSS-Portfolio-Module-2-Challenge/
 
-Here is a screenshot: ![module 2 challenge website screenshot](https://user-images.githubusercontent.com/130262452/235060125-22d041df-302f-4668-8c67-3dc5418c0a9d.png)
+Here is a screenshot: 
+![127 0 0 1_5501_index html (1)](https://github.com/gymbridger/Advanced-CSS-Portfolio-Module-2-Challenge/assets/130262452/fc37edc5-9b0f-4159-b0a3-e27935fb0d0b)
+
 
