@@ -1,132 +1,594 @@
-/*sets background color to gray*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Trebuchet MS";
+}
+
 body {
-  background-color: gray;
+  background-color: rgb(220, 220, 220);
 }
 
-/* resizing the images*/
-img {
-  width: 100%;
-  height: 150px;
+.info,
+.work-section,
+.about-section {
+  margin-top: 4rem;
 }
 
-/*creating a margin to make space*/
-p {
-  margin: 25px;
-  width: 100%;
-  word-wrap: break-word;
-}
-
-header {
-  width: 100%;
-}
-
-/* changed the font size and removd margin up top to fit name in corner*/
-h1#Bridger {
-  width: 100%;
-  background-color: transparent;
-  color: black;
-  font-size: 45px;
-  margin-top: 0px;
-}
-
-/* used display flex to have them links in one line*/
-nav ul {
+.bdaw {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
 }
 
-li {
-  margin: 10px;
-  list-style-type: none;
+#bridger {
+  display: inline;
+  font-size: 4rem;
+  background-color: rgb(138, 181, 181);
+  padding-left: 100px;
+  padding-right: 25px;
+  color: rgb(42, 42, 42);
+  border-radius: 0px 15px 15px 0px;
+  font-family: "Trebuchet MS";
+  font-weight: 700;
 }
 
-/*underlined the links*/
-nav a {
-  color: black;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-a.nav-link {
-  font-size: 30px;
-}
-
-/*holds the blue background*/
-.header-container {
-  width: 100%;
-  position: relative;
-  text-align: center;
-  color: black;
-}
-
-/*used flex on all sections to keep on page*/
-.section {
-  max-height: fit-content;
-  display: flex;
-  margin-top: 20px;
-}
-
-.section-title {
-  width: fit-content;
-}
-
-/*holds all images in one section so i can apply what i need*/
-#portfolio {
-  margin: 25px;
+#avatar {
   margin-left: 10%;
+  border-radius: 50%;
+  max-height: 150px;
+  max-width: 150px;
 }
 
-/*holds the bottom images so i can use flex wrap*/
-.projects-container {
-  width: 100%;
+.top-links {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
   flex-wrap: wrap;
 }
 
-/*targets the first section after parent has been declared*/
-.projects-container:first-child {
-  flex-basis: 100%;
-  height: 400px;
+.header-li {
+  border-bottom: 7px solid rgb(150, 200, 200);
+  margin: 0px 40px;
 }
 
-/*used to fit images*/
-.project-items {
-  width: 50%;
+.nav-link {
+  font-size: 2rem;
+  color: rgb(150, 200, 200);
+  text-decoration: none;
 }
 
-/*targets the left side where i added a border*/
-h3,
-#About,
-#middle,
-#Contact {
-  border-right: solid black 5px;
-  padding: 5px;
-  font-size: 45px;
-  width: 250px;
-  text-align: right;
-}
-
-/*changed top image to make it bigger than those below it*/
-#topimage {
-  height: 350px;
-  width: 100%;
-  border: solid black 5px;
-}
-
-/*used to put "bridgers page" in the bottom right*/
-div.bottom-right {
-  font-size: 45px;
+.header-container {
+  position: relative;
+  text-align: center;
   color: white;
+}
+
+#blue-header {
+  width: 100%;
+  height: 300px;
+}
+
+.bottom-right {
   position: absolute;
-  bottom: 8px;
-  right: 16px;
+  padding: 15px;
+  font-size: 3rem;
+  bottom: 35px;
+  right: 100px;
+  background-color: rgb(150, 200, 200);
+  color: rgb(42, 42, 42);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(42, 42, 42);
+}
+
+.about-section {
+  display: flex;
+}
+
+.learn-text {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-side-bar {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 4rem;
+  width: 20%;
+  padding: 25px;
+  color: rgb(64, 82, 108);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-right: 5px solid black;
+  font-weight: 700;
+}
+
+.paragraph {
+  display: flex;
+  align-items: center;
+  line-height: 2;
+  font-size: 1.5rem;
+  padding: 0px 5%;
+}
+
+.work-section {
+  display: flex;
+  width: 100%;
+}
+
+.photos {
+  display: flex;
+  width: 80%;
+}
+
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#topimage {
+  position: relative;
+  width: 1210px;
+  height: 600px;
+  border: 10px solid rgb(100, 170, 170);
+}
+
+.image-container {
+  position: relative;
+}
+
+.special-photo-text {
+  position: absolute;
+  bottom: 50px;
+  padding-left: 50px;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 3rem;
+  color: rgb(42, 42, 42);
+  background-color: rgb(100, 170, 170);
+  font-weight: 700;
+}
+
+.regular-photo-text {
+  position: absolute;
+  left: 5px;
+  bottom: 50px;
+  padding-left: 50px;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 3rem;
+  color: rgb(42, 42, 42);
+  background-color: rgb(100, 170, 170);
+  font-weight: 700;
+}
+
+.underimages {
+  width: 600px;
+  height: 300px;
+  border: 10px solid rgb(100, 170, 170);
+  margin: 5px;
+}
+
+.info {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.finish {
+  display: flex;
+  width: 80%;
+  justify-content: center;
 }
 
 .bottom {
-  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/*creates a border around the bottom images*/
-.underimages {
-  border: solid black 5px;
+.footer-li {
+  display: inline;
+  font-size: 2rem;
+  margin: 0px 75px;
+  border-bottom: 7px solid rgb(150, 200, 200);
+  margin-left: 25px;
+}
+
+.end {
+  color: rgb(77, 98, 129);
+  text-decoration: none;
+}
+
+.yes {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  * {
+    flex-direction: column;
+    align-items: center;
+  }
+  #bridger {
+    padding: 0px;
+    border-radius: auto;
+    padding: auto;
+  }
+  #avatar {
+    margin: 0px;
+  }
+  #topimage {
+    width: 100%;
+  }
+  .underimages {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .header-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .bottom-right {
+    position: absolute;
+    font-size: 1rem;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 2.5rem;
+    background-color: rgb(150, 200, 200);
+    color: rgb(42, 42, 42);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+  .info,
+  .work-section,
+  .about-section {
+    margin-top: 1rem;
+  }
+  .about-section {
+    align-items: center;
+  }
+  .left-side-bar {
+    padding: 0;
+    width: 100%;
+    border-right: 0px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid black;
+  }
+  .paragraph {
+    padding: 0;
+    line-height: 1.5;
+    width: 100%;
+  }
+  .finish {
+    align-items: center;
+  }
+  .bottom {
+    text-align: center;
+  }
+  .footer-links {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .end {
+    margin: 0px;
+  }
+  .footer-li {
+    margin: 0px;
+  }
+  .finish,
+  .photos,
+  .paragraph {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  * {
+    flex-direction: column;
+    align-items: center;
+  }
+  #bridger {
+    padding: 0px;
+    border-radius: auto;
+    padding: auto;
+  }
+  #avatar {
+    margin: 0px;
+  }
+  #topimage {
+    width: 100%;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .underimages {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .header-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .bottom-right {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 3.5rem;
+    background-color: rgb(150, 200, 200);
+    color: rgb(42, 42, 42);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+  .info,
+  .work-section,
+  .about-section {
+    margin-top: 1rem;
+  }
+  .about-section {
+    align-items: center;
+  }
+  .left-side-bar {
+    padding: 0;
+    width: 100%;
+    border-right: 0px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid black;
+  }
+  .paragraph {
+    padding: 0;
+    line-height: 1.5;
+    width: 100%;
+  }
+  .finish {
+    align-items: center;
+  }
+  .bottom {
+    text-align: center;
+  }
+  .footer-links {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .end {
+    margin: 0px;
+  }
+  .footer-li {
+    margin: 0px;
+  }
+  .finish,
+  .photos,
+  .paragraph {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  * {
+    flex-direction: column;
+    align-items: center;
+  }
+  #bridger {
+    padding: 0px;
+    border-radius: auto;
+    padding: auto;
+  }
+  .top-links {
+    flex-direction: row;
+  }
+  .header-li {
+    margin: 0px 10px;
+  }
+  #avatar {
+    margin: 0px;
+  }
+  #topimage {
+    width: 100%;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .underimages {
+    width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .header-container {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  .bottom-right {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 3.5rem;
+    background-color: rgb(150, 200, 200);
+    color: rgb(42, 42, 42);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+  .info,
+  .work-section,
+  .about-section {
+    margin-top: 1rem;
+  }
+  .about-section {
+    align-items: center;
+  }
+  .left-side-bar {
+    padding: 0;
+    width: 100%;
+    border-right: 0px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid black;
+  }
+  .paragraph {
+    padding: 0;
+    line-height: 1.5;
+    width: 100%;
+  }
+  .finish {
+    align-items: center;
+  }
+  .bottom {
+    text-align: center;
+  }
+  .footer-links {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .end {
+    margin: 0px;
+  }
+  .footer-li {
+    margin: 0px;
+  }
+  .finish,
+  .photos,
+  .paragraph {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  #topimage {
+    width: 100%;
+  }
+  .header-top {
+    width: auto;
+    display: block;
+  }
+  .bdaw {
+    justify-content: center;
+  }
+
+  .top-links {
+    justify-content: center;
+  }
+  .bottom-right {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 4.5rem;
+    background-color: rgb(150, 200, 200);
+    color: rgb(42, 42, 42);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+  .left-side-bar {
+    align-items: flex-start;
+    justify-content: c;
+    padding: 2px;
+    width: 30%;
+    border-right: 0px;
+    text-align: center;
+    border-right: 5px solid black;
+  }
+  .footer-li {
+    margin: 0px 10px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1525px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  #topimage {
+    width: 100%;
+  }
+  .header-top {
+    width: auto;
+    display: block;
+  }
+  .bdaw {
+    justify-content: center;
+  }
+
+  #bridger {
+    padding: 20px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .top-links {
+    justify-content: center;
+  }
+  .bottom-right {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 4.5rem;
+    background-color: rgb(150, 200, 200);
+    color: rgb(42, 42, 42);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+  .left-side-bar {
+    align-items: flex-start;
+    justify-content: c;
+    padding: 20px;
+    width: 30%;
+    border-right: 0px;
+    text-align: center;
+    border-right: 5px solid black;
+  }
+  .footer-li {
+    margin: 0px 10px;
+  }
 }
